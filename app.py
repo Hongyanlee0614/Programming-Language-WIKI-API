@@ -7,10 +7,7 @@ api = Api(app)
 
 @app.route('/')
 def index():
-    return '''This is an API of all programming languages ever existed
-
-Go to api/v1/programming_languages to view whole API
-Go to api/v1/programming_languages/<name> to view the wiki link of the specified programming languages
+    return '''This is an API of all programming languages ever existed\n1. Go to api/v1/programming_languages to view whole API\n2.Go to api/v1/programming_languages/<name> to view the wiki link of the specified programming languages
 '''
 
 class LanguageList(Resource):
